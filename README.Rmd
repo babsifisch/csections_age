@@ -1,0 +1,29 @@
+---
+title: "README"
+author: "Barbara Fischer"
+date: "10/27/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Code and summary data for "Maternal age and socioeconomic factors contribute to rising Caesarean section rates"
+
+This repo contains the code for the analysis in the manuscript "Maternal age and socioeconomic factors contribute to rising Caesarean section rates" by Barbara Fischer and Heinz Strohmer (2020).
+
+The raw data is owned by Statistics Austria and we do not have the rights to share it here, but we are making summary data and all code openly available. 
+
+The file variablenliste_Safe Center_fischer.xlsx in the folder summary_data contains information on the variables used and their levels in German and was made available by Statistics Austria. 
+
+All code is contained in R-files in the folder 'code'. The scripts have to be run in the following order: 
+
+(1) data selection and analysis.R
+(2) reference distribution and age correction.R
+(3) parity correction.R
+(4) linearmodel_education.R
+(5) plotprimarysecondary CS.R
+
+All summary data files in the folder summary_data are in .csv format.
+
